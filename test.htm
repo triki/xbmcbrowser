@@ -1,0 +1,67 @@
+
+<!DOCTYPE HTML><html><head><meta charset="UTF-8">
+<title>CSS Scroller 5</title>
+<style type="text/css">
+* {
+margin:0;
+padding:0;
+outline:0;
+}
+body {
+background:#000000;
+}
+#scroll {
+width:800px;
+height:180px;
+margin:100px auto;
+background:#999;
+border:2px solid #000;
+overflow:auto;
+}
+#scroll div {
+float:left;
+margin-right:-999em;
+white-space:nowrap;
+}
+#scroll img {
+margin:20px 10px 0 10px;
+}
+/* ------------- Flexcroll CSS ------------ */
+.scrollgeneric {
+line-height:1px;
+font-size:1px;
+position:absolute;
+top:0;left:0;
+}
+.hscrollerbase {
+height:17px;
+background:#999;
+}
+.hscrollerbar {
+height:12px;
+background:#000;
+cursor:e-resize;
+padding:3px;
+border:1px solid #999;
+}
+.hscrollerbar:hover {
+background:#222;
+border:1px solid #222;
+}
+</style>
+<!--[if IE 6]><style type="text/css">#scroll div{margin:0;}</style><![endif]-->
+<script type="text/javascript" src="../javascript/flexcroll.js"></script>
+</head>
+<body>
+<h1>CSS Scroller 5 Demo</h1>
+		<p id="breadcrumb">
+	<a href="/">home</a> &raquo; <a href="/code/">code</a> &raquo; <a href="/code/photo-galleries/">photo galleries</a> &raquo; css horizontal scroller5 demo</p>
+<div id="scroll" class="flexcroll">
+<div>
+<img src="adriana2.jpg">
+
+</div>
+</div>
+
+</body>
+</html>
