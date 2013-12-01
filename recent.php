@@ -78,7 +78,7 @@ border:1px solid #222;
 <div>
 <center>
 <?PHP
-//MySql db connection info
+
 include 'datalogin.php';
 
 if ($db_found) {
