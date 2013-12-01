@@ -78,14 +78,8 @@ border:1px solid #222;
 <div>
 <center>
 <?PHP
-
-$user_name = "xbmc";
-$password = "xbmc";
-$database = "xbmc_video75";
-$server = "127.0.0.1";
-
-$db_handle = mysql_connect($server, $user_name, $password);
-$db_found = mysql_select_db($database, $db_handle);
+//MySql db connection info
+include 'datalogin.php';
 
 if ($db_found) {
 
